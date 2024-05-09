@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import styled from 'styled-components';
-import SVG from '../../SVG/SVG';
+import SVG from '../assets/SVG/SVG';
 import Button from './Button';
 
 const Card = ({time}) => {

@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import SVG from '../../SVG/SVG';
+import SVG from '../assets/SVG/SVG';
 import styled from 'styled-components';
 
 const HbgButton = ({onClick}) => {
