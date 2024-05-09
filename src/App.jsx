@@ -1,6 +1,20 @@
-// 해당 위치에 필요한 컴포넌트를 바탕으로 직접 Bootstrap Album 페이지를 개발하시면 됩니다.
+import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
+import Main from "./components/Main/Main";
+import "./style.css"
 function App() {
-  return <>다들 화이팅 !</>;
+  return (
+    <>
+      {<Header
+        aboutContent="Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information."
+        twitterLink="/"
+        facebookLink="/"
+        email="/"
+      />}
+      {<Main />}
+      {<Footer/>}
+    </>
+  );
 }
 
 export default App;
