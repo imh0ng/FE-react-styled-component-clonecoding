@@ -1,4 +1,4 @@
-import Album from "../../components/Album";
+import Album from "./Album";
 import Section1 from "./Section1";
 
 const Main = () => {

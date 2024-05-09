@@ -4,14 +4,14 @@ import Button from '../../components/Button';
 const Section1 = () => {
     return (
         <StyledSection1>
-            <div className='section1-inner'>
+            <StyledSection1Inner>
                 <h1>Album example</h1>
                 <p>Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
                 <StyledButtonArea >
                     <Button $textcolor="#fff" $bgcolor="#007bff" $bordercolor="#007bff" $style={`margin-top: .5rem; margin-bottom: .5rem;${ button1Hover}`}>Main call to action</Button>
                     <Button $textcolor="#fff" $bgcolor="#6c757d" $bordercolor="#6c757d" $style={`margin-top: .5rem; margin-bottom: .5rem;${button2Hover}`}>Secondary action</Button>
                 </StyledButtonArea>
-            </div>
+            </StyledSection1Inner>
         </StyledSection1>
     );
 }
@@ -34,15 +34,6 @@ const StyledSection1 = styled.section`
         padding-bottom: 6rem;
     }
 
-    & .section1-inner {
-        width: 100%;
-        padding-right: 15px;
-        padding-left: 15px;
-        margin-right: auto;
-        margin-left: auto;
-        max-width: 40rem;
-    }
-
     h1 {
         font-size: 2.5rem;
         font-weight: 300;
@@ -53,6 +44,15 @@ const StyledSection1 = styled.section`
         font-weight: 300;
         color: #6c757d
     }
+`
+
+const StyledSection1Inner = styled.div`
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 40rem;
 `
 
 const StyledButtonArea = styled.div`
